@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="detailstest.js"></script>
+</head>
+<body>
+<details class="details-bottom" id="bypass-codes">
+    <summary><span class="summary-head">Bypass Codes</span></summary>
+    <p>Click '<strong>Users</strong>' on the left hand sidebar as shown:</p>
+    <p><img src="/images/group209/121994/adminhome.png" alt="Duo admin portal homepage &gt; Users on sidebar"
+            width="70%"></p>
+    <p>Search for the user by name or username using the search box as shown:</p>
+    <p><img src="/images/group209/121994/adminusers.png" alt="Duo admin portal users page &gt; Search" width="70%"></p>
+    <p>Scroll to section labeled '<strong>Bypass Code</strong>'</p>
+    <p><img src="/images/group209/121994/adminuserpage.png" alt="Duo admin portal user page" width="70%"></p>
+    <details class="details-top" id="single-use-bypass">
+        <summary class="summary-sub">Single use</summary>
+        <p>Click Generate Bypass Code <strong>*<em>Note this will expire after 1 use OR in 60 minutes</em>*</strong></p>
+        <p><img src="/images/group209/121994/adminbypasscodepage.png"
+                alt="Duo admin portal bypass code user page &gt; Generate bypass code"></p>
+        <p>Click the <strong>copy</strong> icon next to the hidden bypass code to copy the code.</p>
+        <p><img src="/images/group209/121994/generatedbypasscopy.png" alt="Copy bypass code"></p>
+        <p>Click the <strong>view </strong>(eye) icon to view the passcode</p>
+        <p><img src="/images/group209/121994/generatedbypassview.png" alt="View bypass code"></p>
+    </details>
+    <details class="details-top" id="multi-use-bypass">
+        <summary class="summary-sub">Multiple use/long term</summary>
+        <p>Click the link labeled '<strong><em>change options</em></strong>'</p>
+        <p><img src="/images/group209/121994/adminpasscodechangeoptions.png" alt="Bypass code change options link"></p>
+        <p>Click the radio button labeled '<em><strong>After ___ minutes</strong>'</em>, then the radio button labeled '<strong><em>Unlimited</em></strong>'.
+            Then, click '<strong><em>Generate bypass code</em></strong>'</p>
+        <h4><em>--- NOTE: The maximum time a bypass code can be active is <span style="text-decoration: underline;">12 hours</span>,
+            or <span style="text-decoration: underline;">720 minutes</span> ---</em></h4>
+        <p><img src="/images/group209/121994/adminpasscodeoptionspage.png" alt="After 720 minutes, Unlimited re-use">
+        </p>
+        <p>Click the <strong>copy</strong> icon next to the hidden bypass code to copy the code.</p>
+        <p><img src="/images/group209/121994/generatedbypasscopy.png" alt="Copy bypass code"></p>
+        <p>Click the <strong>view </strong>(eye) icon to view the passcode</p>
+        <p><img src="/images/group209/121994/generatedbypassview.png" alt="View bypass code"></p>
+    </details>
+</details>
+<details class="details-bottom" id="adduser-details">
+    <summary class="summary-head">Adding a user</summary>
+    <p>To add users to Duo, they must be added into the '<em><strong>DUO User</strong></em>' group in <strong>Active
+        Directory</strong> first.</p>
+    <p>Open Active directory, and enter '<em><strong>DUO</strong></em>' in the search box, then open the '<em><strong>DUO
+        Users</strong></em>' group by double clicking it</p>
+    <p><img src="/images/group209/121994/ADgroupssearch.png" alt="Active directory search Duo users"></p>
+    <p>Click the '<em><strong>Members</strong></em>' tab, and then click '<em><strong>Add</strong></em>'</p>
+    <p><img src="/images/group209/121994/ADduomembers.png" alt="Active director members &gt; add"></p>
+    <p>Type in the user's name as shown and click 'Check names.' <strong>Be sure to select the proper username in the
+        case of multiple accounts</strong></p>
+    <p><strong><img src="/images/group209/121994/ADadduser.png" alt="AD &gt; Add user &gt; Check names"></strong></p>
+    <p>Click on the desired name, then click '<strong>OK</strong>'</p>
+    <p><img src="/images/group209/121994/ADnamematching.png" alt="AD name matching"></p>
+    <hr>
+    <p>Next, go to the Duo Admin portal, and click '<strong>Users</strong>'</p>
+    <p><img src="/images/group209/121994/adminhome.png" alt="Duo admin portal home &gt; Users" width="70%"></p>
+    <p>Then, Click '<strong>directory sync</strong>' on the top right hand corner.</p>
+    <p><img src="/images/group209/121994/duoadmindirectorysync.png" alt="Duo Admin portal directory sync" width="70%">
+    </p>
+    <p>Click '<strong>Active Directory</strong>'</p>
+    <p><img src="/images/group209/121994/duoactivedirectory.png" alt="Duo admin portal &gt; Active Directory"
+            width="70%"></p>
+    <p>Enter the username(s) you want to add, then click '<strong>Sync Users</strong>'</p>
+    <p><img src="/images/group209/121994/duoadminusersync.png" alt="Duo admin portal user sync" width="70%"></p>
+    <p>The user is now added to Duo and can sign in to the Device management portal</p>
+</details>
+<details class="details-bottom" id="adding-device">
+    <summary class="summary-head">Adding a device</summary>
+    <p>Click on the '<strong>Users</strong>' link on the sidebar</p>
+    <p><img src="/images/group209/121994/adminhome.png" alt="Duo admin portal home" width="70%"></p>
+    <p>Search for the user you wish to add a device for.</p>
+    <p><img src="/images/group209/121994/adminusers.png" alt="Duo Admin portal user search" width="70%"></p>
+    <p>Once on the user page, scroll to the applicable device you wish to add and follow the prompts from there.</p>
+</details>
+<details class="details-bottom" id="unlock-user">
+    <summary class="summary-head">Unlocking a user</summary>
+    <p><strong>Only unlock a user if requested by the user themselves, or if there's a ticket related to it.</strong>
+    </p>
+    <p>Click on the '<strong>Users</strong>' link on the sidebar</p>
+    <p><img src="/images/group209/121994/adminhome.png" alt="Duo admin portal home" width="70%"></p>
+    <p>Clicked the 'Locked out' button as shown</p>
+    <p><img src="/images/group209/121994/adminuserslockedout.png" alt="Duo admin portal users list, locked out link"
+            width="70%"></p>
+    <p>On the user's page, select the '<strong>Active</strong>' radio button to unlock them as shown. Then, click
+        '<strong>save changes</strong>'</p>
+    <p><img src="/images/group209/121994/duoadminuserpagelockout.png" alt="Duo admin portal user page &gt; Active"
+            width="70%"></p>
+</details>
+</body>
+</html>

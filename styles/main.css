@@ -1,0 +1,136 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4
+{
+    font-family: Futura Lt BT, Bahnschrift, sans-serif;
+}
+
+a, p, figcaption, details, summary, label, li, button, legend
+{
+    font-family: Futura L, Trebuchet MS, sans-serif;
+}
+
+summary:hover
+{
+    cursor: pointer
+}
+
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.volga-register
+{
+    background-color: whitesmoke;
+    padding: 1em 2em !important;
+    margin: 4vh 12vw;
+    border-radius: 2em
+}
+
+.volga-login
+{
+    background-color: whitesmoke;
+    padding: 2em 2em !important;
+    width: 20%;
+}
+
+.indent
+{
+    margin-left: 10%;
+}
+
+.volga-register label, .volga-register p
+{
+    display: block;
+    margin: 11px 0;
+}
+
+input, select, textarea
+{
+    width: 45%;
+    -moz-box-sizing:content-box;
+    box-sizing:content-box;
+    -webkit-box-sizing:content-box;
+}
+
+.sidebar a, .sidebar a:visited
+{
+    color: dodgerblue;
+}
+
+.sidebar a:hover
+{
+    text-decoration: none;
+}
+
+.volga-register p
+{
+    padding-bottom: 3px;
+}
+
+.container
+{
+    margin: 1em;
+}
+
+.grid-container
+{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 25vw auto;
+}
+
+.grid-container > div
+{
+    padding: 20px 0;
+}
+
+.hidden
+{
+    visibility: hidden !important;
+}
+
+.buy-button
+{
+    background-color: powderblue;
+    font: normal 2em Futura, Trebuchet MS, sans-serif;
+}
+
+.buy-button:hover
+{
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.error-box
+{
+    position: relative; !important;
+    background-color: pink;
+    padding: 1pt 2em !important;
+}
+
+.success-box
+{
+    position: relative; !important;
+    background-color: palegreen;
+    padding: 1pt 2em !important;
+}
+
+.link-map > a, .link-map > a:visited
+{
+    color: dimgrey;
+    text-decoration: underline;
+}
+
+.link-map > a:hover
+{
+    text-decoration: none;
+}

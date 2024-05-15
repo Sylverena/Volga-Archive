@@ -1,0 +1,53 @@
+.header
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background: lightpink;
+    margin-top: 0;
+}
+
+.header-no-flex
+{
+    background: lightpink;
+    padding-right: 1vw;
+    padding-top: 1em;
+    margin: 0;
+}
+
+.header-left
+{
+    margin-right: 3em;
+    padding-bottom: 0;
+}
+
+#linklist
+{
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+
+#linklist a, .header-no-flex a
+{
+    font-family: Futura, Bahnschrift, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    margin-right: .5em;
+}
+
+#linklist > a:hover, .header-no-flex a:hover
+{
+    text-decoration: underline solid black !important;
+}
+
+#logo
+{
+    width: 75%;
+}
+
+a#active
+{
+    text-decoration: underline solid black 4px !important;
+}

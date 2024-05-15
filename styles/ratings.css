@@ -1,0 +1,27 @@
+.rating {
+    display: block;
+    margin: 1em 75% 2em auto;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    color: #ddd;
+    font-size: 30px;
+    margin-right: 7px;
+}
+
+.rating label:before {
+    content: "\2605";
+    margin-right: 5px;
+}
+
+.rating input[type="radio"]:checked ~ label {
+    color: deeppink;
+}
+
+.rating input[type="radio"]:checked ~ label:before {
+    content: "\2605";
+}

@@ -1,0 +1,129 @@
+
+body { font-family: Arial, Helvetica, sans-serif; }
+
+.row { display: flex; }
+
+header, .desc, footer {
+    margin: 0px auto -1px auto;
+    text-align: center;
+}
+
+header {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #03219B;
+    color: #FFCC7D;
+}
+
+.desc {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 25px;
+    background-color: #aaa;
+    color: #FFCC7D;
+}
+
+header h1 { margin: 5px; }
+
+.column {
+    width: 50%;
+}
+
+.left {
+    padding: 20px;
+    background-color: #4B86BD;
+    color: #FFCC7D;
+}
+
+.right {
+    background-color: #D6F7FA;
+    padding: 20px;
+}
+
+footer {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #03219B;
+    color: #FFCC7D;
+    text-align: right;
+}
+
+footer p { margin: 5px; }
+
+#left-column a { text-decoration: none; }
+
+#left-column a:link, #left-column a:visited { color: #FFCC7D; }
+
+#left-column a:hover { color: #E59D2C; }
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) { background-color: #f2f2f2; }
+
+#customers tr:nth-child(odd) { background-color: #d2d2d2; }
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4B86BD;
+    color: white;
+}
+
+/* ---------- */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #aaa;
+}
+
+ul.topnav li { float: left; }
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) { background-color: #666; }
+
+ul.topnav li a.active {
+    background-color: #4B86BD;
+    color: #FFCC7D;
+}
+
+ul.topnav li.right { float: right; }
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+}
+
+.material-symbols-outlined {
+     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}

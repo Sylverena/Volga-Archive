@@ -1,0 +1,66 @@
+.flex-container {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+
+.flex-card
+{
+    background-color: lavender;
+    padding: 1em;
+    height: 40vh;
+    flex-basis: 13vw;
+}
+
+.flex-card > img.center
+{
+    height: 40%;
+}
+
+.flex-card > h3, .flex-card > h4, .flex-card > h5
+{
+    margin: .5em 0;
+}
+
+.card-link
+{
+    display: block;
+    color: unset;
+    text-decoration: unset;
+    margin: .75em;
+}
+
+.card-link:hover
+{
+    background-color: lavenderblush;
+    box-shadow: .5em .5em .4em rgba(0, 0, 0, .2);
+}
+
+.flex-row-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    gap: 1em 0;
+}
+
+.flex-row
+{
+    margin: .5em 0;
+    border-radius: 1em;
+    flex-basis: 90%;
+    width: 90%;
+    height: 10vh;
+    padding:.5em 1em;
+    background-color: lavender;
+}
+
+.flex-row td
+{
+    padding: .5em;
+}
